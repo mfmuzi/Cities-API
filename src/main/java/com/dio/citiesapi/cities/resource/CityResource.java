@@ -1,6 +1,6 @@
-package com.dio.citiesapi.cities;
+package com.dio.citiesapi.cities.resource;
 
-import com.dio.citiesapi.cities.entities.City;
+import com.dio.citiesapi.cities.entity.City;
 import com.dio.citiesapi.cities.repository.CityRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

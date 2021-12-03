@@ -1,7 +1,9 @@
-package com.dio.citiesapi.states;
+package com.dio.citiesapi.states.entity;
 
-import com.dio.citiesapi.countries.Country;
+import com.dio.citiesapi.countries.entity.Country;
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -9,6 +11,8 @@ import org.hibernate.annotations.TypeDefs;
 import javax.persistence.*;
 import java.util.List;
 
+@Getter
+@NoArgsConstructor
 @Entity(name = "State")
 @Table(name = "estado")
 @TypeDefs({
@@ -39,36 +43,4 @@ public class State {
     @Column(name = "ddd", columnDefinition = "jsonb")
     private List<Integer> ddd;
 
-    public State() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public Integer getIbge() {
-        return ibge;
-    }
-
-    /*Countries in Brazil*/
-    /*public Integer getCountryId() {
-        return countryId;
-    }*/
-
-    public Country getCountry(){
-        return country;
-    }
-
-
-    public List<Integer> getDdd() {
-        return ddd;
-    }
 }

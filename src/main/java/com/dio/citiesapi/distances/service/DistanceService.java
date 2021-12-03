@@ -1,6 +1,6 @@
 package com.dio.citiesapi.distances.service;
 
-import com.dio.citiesapi.cities.entities.City;
+import com.dio.citiesapi.cities.entity.City;
 import com.dio.citiesapi.cities.repository.CityRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

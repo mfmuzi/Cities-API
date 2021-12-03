@@ -1,5 +1,6 @@
-package com.dio.citiesapi.states;
+package com.dio.citiesapi.states.resource;
 
+import com.dio.citiesapi.states.entity.State;
 import com.dio.citiesapi.states.repository.StateRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

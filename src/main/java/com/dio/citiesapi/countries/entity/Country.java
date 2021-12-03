@@ -1,10 +1,15 @@
-package com.dio.citiesapi.countries;
+package com.dio.citiesapi.countries.entity;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Getter
+@NoArgsConstructor
 @Entity
 @Table(name = "pais")
 public class Country {
@@ -23,27 +28,4 @@ public class Country {
 
     private Integer bacen;
 
-
-    public Country() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getPortugueseName() {
-        return portugueseName;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public Integer getBacen() {
-        return bacen;
-    }
 }

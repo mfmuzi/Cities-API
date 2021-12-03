@@ -1,6 +1,6 @@
 package com.dio.citiesapi.cities.repository;
 
-import com.dio.citiesapi.cities.entities.City;
+import com.dio.citiesapi.cities.entity.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

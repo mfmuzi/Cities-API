@@ -1,6 +1,7 @@
-package com.dio.citiesapi.cities.entities;
+package com.dio.citiesapi.cities.entity;
 
-import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -11,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Getter
+@NoArgsConstructor
 @Entity
 @Table(name = "cidade")
 @TypeDefs({
@@ -43,31 +46,5 @@ public class City {
         this.geolocation = geolocation;
     }*/
 
-    public City() {
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Integer getUf() {
-        return uf;
-    }
-
-    public Integer getIbge() {
-        return ibge;
-    }
-
-    public String getGeolocation() {
-        return geolocation;
-    }
-
-    public Point getLocation() {
-        return location;
-    }
 }

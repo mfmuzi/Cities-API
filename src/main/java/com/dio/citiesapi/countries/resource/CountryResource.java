@@ -1,6 +1,6 @@
-package com.dio.citiesapi.countries;
+package com.dio.citiesapi.countries.resource;
 
-import com.dio.citiesapi.countries.Country;
+import com.dio.citiesapi.countries.entity.Country;
 import com.dio.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,7 +17,7 @@ import java.util.Optional;
 public class CountryResource {
 
 
-    private CountryRepository repository;
+    private final CountryRepository repository;
 
     public CountryResource(CountryRepository repository) {
         this.repository = repository;

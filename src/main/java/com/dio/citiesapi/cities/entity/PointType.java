@@ -1,4 +1,4 @@
-package com.dio.citiesapi.cities.entities;
+package com.dio.citiesapi.cities.entity;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
